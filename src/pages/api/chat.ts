@@ -3,9 +3,9 @@ import { NextRequest } from "next/server";
 import { openAIApiEndpoint, openAIApiKey, openAIOrganization, hasFeature, getModel } from "@/utils";
 
 // Needs Edge for streaming response.
-export const config = {
-  runtime: "edge",
-};
+// export const config = {
+//   runtime: "edge",
+// };
 
 const getApiEndpoint = (apiEndpoint: string) => {
   const url = new URL(apiEndpoint);
